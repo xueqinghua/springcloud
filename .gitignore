@@ -1,0 +1,14 @@
+target/
+*.jar
+*.war
+*.class
+classes/
+
+# eclipse
+.settings/
+.classpath
+.project
+
+# IntelliJ project files
+.idea
+*.iml

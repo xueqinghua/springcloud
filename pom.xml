@@ -80,5 +80,6 @@
     <module>provider</module>
     <module>consumer</module>
     <module>ribbon</module>
+    <module>config</module>
   </modules>
 </project>

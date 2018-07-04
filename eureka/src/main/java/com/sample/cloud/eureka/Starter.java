@@ -1,7 +1,7 @@
 package com.sample.cloud.eureka;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @EnableEurekaServer
@@ -9,7 +9,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class Starter {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(Starter.class, args);
+		//SpringApplication.run(Starter.class, args);
+		
+		new SpringApplicationBuilder(Starter.class).web(true).run(args);
 	}
 
 }

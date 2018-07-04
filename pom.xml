@@ -81,5 +81,6 @@
     <module>consumer</module>
     <module>ribbon</module>
     <module>config</module>
+    <module>config-file</module>
   </modules>
 </project>

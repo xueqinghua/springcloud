@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        default_label: master
+        git:
+#           uri: https://github.com/spring-cloud-samples/config-repo
+           uri: https://github.com/xueqinghua/config-repository
+           
+server:
+  port: 9006
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

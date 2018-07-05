@@ -11,11 +11,14 @@ public class ClientController {
 	
 	@Autowired
 	private DiscoveryClient discoveryClient;
-	
+		
 	
 	@RequestMapping("service")
 	public Object clientList() {
 		return discoveryClient.getServices();
 	}
+	
+	
+	
 
 }

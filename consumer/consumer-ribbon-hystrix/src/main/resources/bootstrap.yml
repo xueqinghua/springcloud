@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer-ribbon-hystrix
+  cloud:
+    config:
+      profile: development
+      discovery:
+        enabled: true
+        serviceId: CONFIG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

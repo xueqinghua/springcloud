@@ -21,5 +21,7 @@
   	<module>consumer-base</module>
     <module>consumer-ribbon</module>
     <module>consumer-feign</module>
+    <module>consumer-ribbon-hystrix</module>
+    <module>consumer-feign-hystrix</module>
   </modules>
 </project>

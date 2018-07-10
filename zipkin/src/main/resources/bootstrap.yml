@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zipkin
+  cloud:
+    config:
+#      uri: http://localhost:9006/config
+      profile: development
+      discovery:
+        enabled: true
+        serviceId: CONFIG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

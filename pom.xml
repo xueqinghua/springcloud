@@ -23,6 +23,8 @@
    <!--  <spring-boot-dependencies.version>1.5.14.RELEASE</spring-boot-dependencies.version> -->
     <spring-cloud-dependencies.version>Edgware.SR4</spring-cloud-dependencies.version>
 	<!--<spring-cloud-dependencies.version>Edgware.SR4</spring-cloud-dependencies.version> -->
+	<zipkin-server.version>2.10.0</zipkin-server.version>
+	<zipkin-autoconfigure-ui.version>2.10.0</zipkin-autoconfigure-ui.version>
   </properties>
   
   
@@ -52,6 +54,19 @@
   			<version>${junit.version}</version>
   			<scope>test</scope>
   		</dependency>
+  		
+  		
+  		<dependency>
+		    <groupId>io.zipkin.java</groupId>
+		    <artifactId>zipkin-server</artifactId>
+		    <version>${zipkin-server.version}</version>
+		</dependency>
+  		
+		<dependency>
+		    <groupId>io.zipkin.java</groupId>
+		    <artifactId>zipkin-autoconfigure-ui</artifactId>
+		    <version>${zipkin-autoconfigure-ui.version}</version>
+		</dependency>  		
   	
   	</dependencies>
   
@@ -81,5 +96,6 @@
     <module>ribbon</module>
     <module>config</module>
     <module>zuul</module>
+    <module>zipkin</module>
   </modules>
 </project>

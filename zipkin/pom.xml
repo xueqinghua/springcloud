@@ -7,8 +7,8 @@
     <artifactId>springcloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>provider</artifactId>
-  <name>provider</name>
+  <artifactId>zipkin</artifactId>
+  <name>zipkin</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,7 +21,22 @@
     </dependency>
     
     
-    <dependency>
+  <dependency>
+  	<groupId>io.zipkin.java</groupId>
+  	<artifactId>zipkin-server</artifactId>
+<!--   	<exclusions>
+  		<exclusion>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-log4j2</artifactId>
+  		</exclusion>
+  	
+  	</exclusions> -->
+  </dependency>
+  <dependency>
+  	<groupId>io.zipkin.java</groupId>
+  	<artifactId>zipkin-autoconfigure-ui</artifactId>
+  </dependency>
+<!--     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-eureka</artifactId>
     </dependency>
@@ -36,22 +51,7 @@
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-actuator</artifactId>
-	</dependency>
-	
-	<dependency>
-	  <groupId>org.springframework.cloud</groupId>
-	  <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-	</dependency>
-	
-	<dependency>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-sleuth</artifactId>
-	</dependency>
-	
-	 
+	</dependency>   -->   
+    
   </dependencies>
-  
-  
-  
-  
 </project>

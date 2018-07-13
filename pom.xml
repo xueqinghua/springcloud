@@ -97,5 +97,6 @@
     <module>config</module>
     <module>zuul</module>
     <module>zipkin</module>
+    <module>admin</module>
   </modules>
 </project>

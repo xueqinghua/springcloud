@@ -22,7 +22,7 @@ public class AuthConfiguration {
 	private static final String RESOURCE_ID = "order";
 	
 
-	@EnableResourceServer
+	
 	@Configuration
 	public static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
@@ -55,7 +55,7 @@ public class AuthConfiguration {
 	}
 	
 	
-	@EnableAuthorizationServer
+	
 	@Configuration
 	public static class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 		
